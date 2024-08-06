@@ -41,3 +41,4 @@ docs/genpages.sh
 sources/compile
 *.pyc
 *.swp
+*.exe
