@@ -653,7 +653,7 @@ int main(int argc, char** argv)
 
             /* Unknown parameter. */
         default:
-            printf("usage: jcal [-13jypPVN] [year [month[day]]]\n");
+            printf("usage: jcal [-13jypPNV] [year [month[day]]]\n");
             exit(EXIT_FAILURE);
         }
     }
