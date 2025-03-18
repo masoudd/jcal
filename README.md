@@ -1,3 +1,5 @@
+Forked from https://github.com/persiancal/jcal
+
 jcal
 ====
 
@@ -7,6 +9,20 @@ libc implementations. Jalali calendar provides an API similar to that of libc's 
 
 Jalali calendar package consists of a library namely libjalali and two simple and easy to use terminal tools, jcal
 and jdate with functionality similar to UNIX cal and date.
+
+Compiling from git
+==================
+This project uses the gnu autoconf build system. see `info autoconf` for in depth documentation.
+
+In summary:
+* Run `autoreconf -iv` in the `sources` directory of the cloned git repository to generate the `configure` script and other files
+* Run `./configure` to generate `Makefile`s and other files.
+* Run `make` to compile
+* Run `make check` to run tests
+
+The released source tarballs contain the `configure` script so you can skip generating it.
+
+To clean all the autoconf generated files: `git clean -idX`
 
 
 ---

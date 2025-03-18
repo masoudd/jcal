@@ -17,6 +17,7 @@ sources/test_kit/jtime/jmktime
 Makefile.in
 Makefile
 INSTALL
+test-driver
 aclocal.m4
 autom4te.cache
 config.guess
