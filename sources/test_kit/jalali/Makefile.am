@@ -3,7 +3,7 @@ check_PROGRAMS = list_leap
 check_DATA = leaps_1206_1498.txt
 TESTS = test_leaps.sh
 
-INCLUDES = -I../../libjalali
+INCLUDES = -I${top_srcdir}/libjalali
 
 AM_CFLAGS = @CFLAGS@ -fno-inline -D_REENTRANT -Wall \
 	-O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE
