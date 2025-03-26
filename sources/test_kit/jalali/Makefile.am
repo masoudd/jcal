@@ -1,5 +1,5 @@
 bin_PROGRAMS = elc get_date get_diff jalali_update jyinfo leap sec_converter
-check_PROGRAMS = list_leap
+check_PROGRAMS = list_leap table_leap
 check_DATA = leaps_1206_1498.txt
 TESTS = test_leaps.sh
 
@@ -16,6 +16,7 @@ jyinfo_SOURCES = jyinfo.c
 leap_SOURCES = leap.c
 sec_converter_SOURCES = sec_converter.c
 list_leap_SOURCES = list_leap.c
+table_leap_SOURCES = table_leap.c
 
 
 
