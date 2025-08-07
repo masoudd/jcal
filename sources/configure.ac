@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_INIT([jcal],[0.4.1],[https://codeberg.org/masoudd/jcal])
+AC_INIT([jcal],[0.5.1],[https://codeberg.org/masoudd/jcal])
 
 AM_INIT_AUTOMAKE
 AC_PROG_LIBTOOL

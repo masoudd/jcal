@@ -21,7 +21,7 @@
 #ifndef JDATE_H
 #define JDATE_H
 
-#define JDATE_VERSION "0.4.1"
+#define JDATE_VERSION "0.5.1"
 
 /* short options */
 #define JDATE_VALID_ARGS "a:r:d:j:g:RuhV"
@@ -39,7 +39,8 @@
 #define VERSION_OPT "version"
 
 /* help string */
-#define HELP_STR "Usage: jdate [arRuhV]... [+OUTPUT_FORMAT]\
+#define HELP_STR                                                               \
+  "Usage: jdate [arRuhV]... [+OUTPUT_FORMAT]\
 [d INPUT_FORMAT;DATE_STRING]\n\
 Display the current date and time in the given FORMAT.\n\
 \n\
@@ -103,30 +104,30 @@ Display the current date and time in the given FORMAT.\n\
   %z   +hhmm numeric time zone (e.g., +0330)\n\
   %Z   alphabetic time zone abbreviation (e.g., IRST)\n\
 \n\
-Report jdate bugs to ghassemi@ftml.net\n\
-libjalali home page: <http://savannah.nongnu.org/projects/jcal/>"
+Report jdate bugs to https://github.com/persiancal/jcal/issues\n\
+libjalali home page: <https://github.com/persiancal/jcal>"
 
 /*
  *@action_handler
  */
 struct jdate_action {
-    int normal;           /* standard representation: %h %b %m %H:%M:%S %Z %Y */
-    int reference;        /* last modification time */
-    char* reference_ptr;  /* last modification time argument */
-    int access;           /* last access */
-    char* access_ptr;     /* last access argument */
-    int date;             /* use date string instead of 'now' */
-    char* date_ptr;       /* date string argument */
-    int jalali;           /* convert a gregorian date to jalali */
-    char* jalali_ptr;     /* jalali conversion argument */
-    int gregorian;        /* convert a jalali date to gregorian */
-    char* gregorian_ptr;  /* gregorian conversion argument */
-    int format;           /* +FORMAT. uses jstrftime() to format output */
-    char* format_ptr;     /* +FORMAT argument */
-    int rfc2822;          /* rfc2822 date and time: %h, %m %b %Y %H:%M:%S %z */
-    int utc;              /* Coordinated Universal Time */
-    int help;             /* help */
-    int version;          /* version */
+  int normal;          /* standard representation: %h %b %m %H:%M:%S %Z %Y */
+  int reference;       /* last modification time */
+  char *reference_ptr; /* last modification time argument */
+  int access;          /* last access */
+  char *access_ptr;    /* last access argument */
+  int date;            /* use date string instead of 'now' */
+  char *date_ptr;      /* date string argument */
+  int jalali;          /* convert a gregorian date to jalali */
+  char *jalali_ptr;    /* jalali conversion argument */
+  int gregorian;       /* convert a jalali date to gregorian */
+  char *gregorian_ptr; /* gregorian conversion argument */
+  int format;          /* +FORMAT. uses jstrftime() to format output */
+  char *format_ptr;    /* +FORMAT argument */
+  int rfc2822;         /* rfc2822 date and time: %h, %m %b %Y %H:%M:%S %z */
+  int utc;             /* Coordinated Universal Time */
+  int help;            /* help */
+  int version;         /* version */
 };
 
 #endif /* JDATE_H */
