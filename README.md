@@ -1,6 +1,7 @@
-Forked from https://github.com/persiancal/jcal
+Forked from: https://github.com/persiancal/jcal
+Original Project: http://savannah.nongnu.org/projects/jcal/
 
-jcal
+neojcal
 ====
 <a href="https://repology.org/project/jcal/versions">
     <img src="https://repology.org/badge/vertical-allrepos/jcal.svg" alt="Packaging status" align="right">
@@ -18,7 +19,7 @@ This project uses the gnu autoconf build system. see `info autoconf` for in dept
 
 In summary:
 * Run `autoreconf -iv` in the `sources` directory of the cloned git repository to generate the `configure` script and other files
-* Run `./configure` to generate `Makefile`s and other files.
+* Run `./configure` to generate `Makefile`s and other files. (Alternativly, you can build in a separate out of tree directory: `mkdir ../../neojcal-build; cd ../../neojcal-build; ../neojcal/sources/configure`
 * Run `make` to compile
 * Run `make check` to run tests
 
